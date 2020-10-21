@@ -1,5 +1,8 @@
 import kotlinx.browser.document
+import react.dom.*
 
 fun main() {
-    document.write("Hello, world!")
+    render(document.getElementById("root")) {
+        child(App::class) {}
+    }
 }
